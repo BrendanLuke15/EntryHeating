@@ -6,7 +6,6 @@
 import os
 from csv import reader
 
-# Load Files as Text
 dirname = os.path.dirname(__file__) # use relative file path (same folder)
 
 # String initial (KML spec)
