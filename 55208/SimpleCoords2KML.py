@@ -42,7 +42,7 @@ kmlString = """<?xml version="1.0" encoding="UTF-8"?>
 with open(dirname + '/csvData.csv', 'r') as f_in: # change filename as needed
     csv_reader = reader(f_in)
     for row in csv_reader:
-        kmlString += row[2] + ',' + row[1] + ',' + row[0] + '\n' # add data
+        kmlString += row[2] + ',' + row[1] + ',' + row[0] + '\n' # add data: lon, lat, alt
 
 # Closeout KML spec
 endStr = """\t\t\t\t</coordinates>
